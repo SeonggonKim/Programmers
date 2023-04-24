@@ -3,13 +3,13 @@ def solution(balls, share):
     boonja = 1
     
     for _ in range(share):
-        boonmo *= balls
+        boonja *= balls
         balls -= 1
     
     for _ in range(share):
-        boonja *= share
+        boonmo *= share
         share -= 1
     
-    answer = boonmo / boonja
+    answer = boonja / boonmo
     
     return answer
